@@ -12,7 +12,7 @@ const Home = () => {
         'X-Api-Key': key,
     }
     const nombre = 'Michael Jordan'
-    const url = process.env.REACT_APP_URL_APP;
+    const url = process.env.REACT_APP_URL_APP+nombre;
     useEffect(() => {
         console.log(key);
         Axios.get(url, { headers })
